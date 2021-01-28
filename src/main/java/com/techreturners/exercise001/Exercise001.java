@@ -10,17 +10,24 @@ public class Exercise001 {
 
     public String generateInitials(String firstName, String lastName) {
         // Add your code here
-        return "";
+        return firstName.charAt(0) +"."+ lastName.charAt(0);
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        // Add your code here
-        return 0.0;
+        double answer = Math.round(originalPrice + (originalPrice * vatRate/100)); 
+        return answer;
     }
 
     public String reverse(String sentence) {
-        // Add your code here
-        return "";
+        int i = sentence.length();
+        String answer = "";
+        System.out.print(sentence);
+        while (i > 0) {
+            answer = answer + sentence.charAt(i-1);
+            i --;
+        }
+        System.out.print(answer);
+        return answer;
     }
 
     public int countLinuxUsers(List<User> users) {
