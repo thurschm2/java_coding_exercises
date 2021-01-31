@@ -4,13 +4,11 @@ import java.util.List;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
-        // Add your code here
         return Character.toUpperCase(word.charAt(0)) + word.substring(1);
     }
 
     public String generateInitials(String firstName, String lastName) {
-        // Add your code here
-        return firstName.charAt(0) +"."+ lastName.charAt(0);
+        return Charecter.firstName.charAt(0) +"."+ Character.lastName.charAt(0);
     }
 
     public double addVat(double originalPrice, double vatRate) {
@@ -21,17 +19,21 @@ public class Exercise001 {
     public String reverse(String sentence) {
         int i = sentence.length();
         String answer = "";
-        System.out.print(sentence);
         while (i > 0) {
             answer = answer + sentence.charAt(i-1);
             i --;
         }
-        System.out.print(answer);
+        //System.out.print(answer);
         return answer;
     }
 
     public int countLinuxUsers(List<User> users) {
-        // Add your code here
-        return 0;
+        int count = 0;
+        
+        for (int i = 0 ; i < users.length ; i ++ ) {
+            System.out.println(users[)
+           if (users.find("Linux") == true ) {
+                count ++;}
+        return count;
     }
 }
